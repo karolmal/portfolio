@@ -1,4 +1,5 @@
 @import 'config';
+@import 'utilities';
 
 // General Styles
 * {
@@ -8,9 +9,10 @@
 }
 
 body {
-    font-family:'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     background: #fff;
+    color: #fff;
 }
 
 a {
@@ -22,10 +24,74 @@ ul {
     list-style: none;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
 img {
     width: 100%;
+    opacity: 0.3;
+}
+
+#logo {
+    color: #fff;
+}
+
+// Main-nav
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $medium-color;
+        }
+
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+// Header
+#header {
+
+    // Header Home
+    &-home {
+        background: $bg-image no-repeat center right/cover;
+        opacity: 0.9;
+        height: 100vh;
+
+        // Header content
+        .header-content {
+            text-align: center;
+            padding-top: 20%;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    // Header Inner
+    &-inner {}
 }
