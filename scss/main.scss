@@ -12,7 +12,7 @@ body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     background: #fff;
-    color: #fff;
+    color: #333;
 }
 
 a {
@@ -32,7 +32,6 @@ h4 {
 
 img {
     width: 100%;
-    opacity: 0.3;
 }
 
 #logo {
@@ -78,7 +77,7 @@ img {
     &-home {
         background: $bg-image no-repeat center right/cover;
         opacity: 0.9;
-        height: 100vh;
+        height: 80vh;
 
         // Header content
         .header-content {
@@ -88,10 +87,119 @@ img {
             h1 {
                 font-size: 4rem;
                 line-height: 1.2;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
             }
         }
     }
 
     // Header Inner
     &-inner {}
+}
+
+// Home Sections
+#home {
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+
+            .fab {
+                color: #fff;
+                padding-bottom: 0.4rem;
+            }
+        }
+
+        .social {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+
+            .fab:hover {
+                color: $main-color;
+            }
+        }
+
+        .dark-background {
+            background: $main-color;
+            border-radius: 15px;
+
+        }
+    }
+
+    // Home section B
+    &-b {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+            // process-step
+            &-step {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                font-size: 2rem;
+                background: $main-color;
+                border-radius: 50%;
+                line-height: 15px;
+                padding: 0.5rem;
+                transition: all 1s;
+                // text-align: center;
+            }
+
+            // process icon
+            &-icon {
+                border-radius: 50%;
+                background: $dark-color;
+                color: #fff;
+                padding: 2rem;
+                line-height: 70px;
+                text-align: center;
+                position: relative;
+                transition: all 1s;
+
+                &:hover {
+                    background: $main-color;
+                    padding: 2.5rem;
+                    line-height: 80px;
+
+                    .process-step {
+                        background-color: $dark-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#main-footer {
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #333;
+        color: #fff;
+
+        .socials .fab {
+            margin-right: 1rem;
+            border-radius: 50%;
+            color: #fff;
+            padding: 0.5rem;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
 }
