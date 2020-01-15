@@ -97,7 +97,11 @@ img {
     }
 
     // Header Inner
-    &-inner {}
+    &-inner {
+        background: $bg-image no-repeat 20% 10% / cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
 }
 
 // Home Sections
@@ -180,6 +184,29 @@ img {
             }
         }
 
+    }
+}
+
+// About Section
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bioimage bio bio';
+            grid-gap: 1rem;
+        }
+
+        //Grida Area
+        .bio-image {
+            grid-area: bioimage;
+        }
+
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.7rem;
+        }
     }
 }
 

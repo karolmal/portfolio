@@ -29,6 +29,22 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: #5ab4fd; }
 
+.bg-main {
+  background: #5ab4fd;
+  color: set-text-color(#5ab4fd); }
+
+.bg-dark {
+  background: #333;
+  color: set-text-color(#333); }
+
+.bg-light {
+  background: #f4f4f4;
+  color: set-text-color(#f4f4f4); }
+
+.bg-medium {
+  background: #ccc;
+  color: set-text-color(#ccc); }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -145,6 +161,11 @@ img {
     #header-home .header-content p {
       color: #fff; }
 
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 10%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #5ab4fd; }
+
 #home-a .specials {
   margin-top: 3rem;
   display: grid;
@@ -198,6 +219,19 @@ img {
       line-height: 80px; }
       #home-b .process-icon:hover .process-step {
         background-color: #333; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio';
+  grid-gap: 1rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #5ab4fd;
+  padding: 0.7rem; }
 
 #main-footer .footer-content {
   display: flex;
