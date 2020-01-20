@@ -233,6 +233,19 @@ img {
   border-left: 3px solid #5ab4fd;
   padding: 0.7rem; }
 
+#about-b {
+  color: #fff;
+  text-align: center; }
+  #about-b .progress {
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 15px;
+    margin-bottom: 0.6rem; }
+    #about-b .progress div {
+      height: 100%;
+      background: #5ab4fd; }
+
 #main-footer .footer-content {
   display: flex;
   align-items: center;
