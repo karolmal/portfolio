@@ -1,7 +1,7 @@
 .container {
     max-width: $website-width;
     padding: 0 1.5rem;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
 
     &-dark {
         @extend %btn-shared;
-        color: #333;
+        color: #fff;
         background-color: $dark-color;
     }
 }
@@ -46,22 +46,22 @@ input[class^='btn-']:hover {
 .bg {
     &-main {
         background: $main-color;
-        color: set-text-color($main-color);
+        color: $dark-color;
     }
 
     &-dark {
         background: $dark-color;
-        color: set-text-color($dark-color);
+        color: $light-color;
     }
 
     &-light {
         background: $light-color;
-        color: set-text-color($light-color);
+        color: $dark-color;
     }
 
     &-medium {
         background: $medium-color;
-        color: set-text-color($medium-color);
+        color: $medium-color;
     }
 }
 
