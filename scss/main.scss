@@ -133,7 +133,7 @@ img {
         }
 
         .dark-background {
-            background: $main-color;
+            background: #495FDF;
             border-radius: 15px;
 
         }
@@ -305,3 +305,6 @@ img {
         }
     }
 }
+
+// Import Media queries
+@import 'media';
