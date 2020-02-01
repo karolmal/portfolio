@@ -19,4 +19,75 @@
             padding: 1rem;
         }
     }
+
+    #header {
+        &-home {
+            height: 10rem;
+            border-bottom: 3px solid $main-color;
+
+            .header-content {
+                display: none;
+            }
+        }
+    }
+
+    #home-a {
+        .specials {
+            grid-template-columns: 1fr;
+        }
+
+        .socials {
+            display: none;
+        }
+    }
+
+    #home-b {
+        .process {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    //About 
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                    'bioimage'
+                    'bio'
+                    'bio'
+                ;
+            }
+        }
+    }
+
+    //Contact
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    'name'
+                    'subject'
+                    'email'
+                    'phone'
+                    'message';
+            }
+        }
+
+        &-b {
+            .contact-info {
+                display: block;
+            }
+
+            div {
+                margin-bottom: 1rem;
+                border-bottom: 1px #555 solid;
+            }
+        }
+    }
+
+    //Footer
+    #main-footer {
+        height: 7rem;
+    }
 }
